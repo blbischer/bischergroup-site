@@ -143,6 +143,18 @@ section{padding:96px 0}
 footer{background:#081018;color:#7f8e9c;font-size:.85rem;padding:32px 0}
 footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 
+/* Teaming */
+.partner{display:grid;grid-template-columns:220px 1fr;gap:36px;align-items:center;background:var(--ink-2);border:1px solid #2a3b4b;border-left:3px solid var(--accent);border-radius:6px;padding:32px}
+.partner .logo{display:flex;align-items:center;justify-content:center}
+.partner .logo img{width:190px;max-width:100%;height:auto;display:block}
+.partner .tag{font-size:.74rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted-dark);margin-bottom:8px}
+.partner h3{color:#fff;font-size:1.3rem;margin-bottom:10px}
+.partner p{color:#aebbc7;font-size:.97rem;max-width:44em}
+.partner a{color:var(--accent);font-weight:600;font-size:.92rem;text-decoration:none;display:inline-block;margin-top:14px}
+.partner a:hover{text-decoration:underline}
+.teaming-cta{margin-top:28px;color:#a9b6c2;font-size:1rem}
+.teaming-cta a{color:var(--accent);font-weight:600}
+
 /* Responsive */
 @media (max-width:960px){
   .hero .wrap,.pp,.cover,.contact{grid-template-columns:1fr;gap:40px}
@@ -165,6 +177,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
   .grid3,.cos,.lead-grid,.creds,.agencies{grid-template-columns:1fr}
   .cred{border-right:0 !important;border-bottom:1px solid var(--line) !important}
   .cred:last-child{border-bottom:0 !important}
+  .partner{grid-template-columns:1fr;gap:20px;padding:24px}
+  .partner .logo{justify-content:flex-start}
   .strip .wrap{grid-template-columns:1fr}
   .contact>div{min-width:0}
   .contact-list li{flex-direction:column;gap:2px}
@@ -189,6 +203,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
       <li><a href="#capabilities">Capabilities</a></li>
       <li><a href="#companies">Companies</a></li>
       <li><a href="#performance">Past Performance</a></li>
+      <li><a href="#teaming">Teaming</a></li>
       <li><a href="#leadership">Leadership</a></li>
       <li><a class="btn" href="#contact">Contact</a></li>
     </ul>
@@ -333,6 +348,26 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
         <div class="job"><div class="meta">Defense Industry &middot; Recurring</div><h3>SCIF doors and hardware</h3><p>About ten years of recurring service for a major defense contractor: SCIF door installation, hardware, and rekeying.</p></div>
       </div>
     </div>
+  </div>
+</section>
+
+<section id="teaming" class="dark">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Teaming Partners</div>
+      <h2>From assessment to remediation.</h2>
+      <p>We team with primes, general contractors, and consultants as the secure-door, vault, container, and locking-hardware partner on federal security work.</p>
+    </div>
+    <article class="partner">
+      <div class="logo"><img src="stonebridge-strategic.webp" alt="Stonebridge Strategic" width="190" height="134" loading="lazy"></div>
+      <div>
+        <div class="tag">Washington, DC &middot; Facility, Life-Safety &amp; Security Consulting</div>
+        <h3>Stonebridge Strategic</h3>
+        <p>Stonebridge assesses facilities for security, fire and life-safety, and preparedness gaps. Bischer Group delivers the secure-door, vault, container, and locking-hardware remediation those assessments call for.</p>
+        <a href="https://stonebridgestrategic.com/" target="_blank" rel="noopener">stonebridgestrategic.com &rarr;</a>
+      </div>
+    </article>
+    <p class="teaming-cta">Looking for an SDVOSB partner for secure-space scope? <a href="#contact">Get in touch.</a></p>
   </div>
 </section>
 
